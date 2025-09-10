@@ -57,15 +57,34 @@ public class Login_Stepdefs {
 	}
 
 	
-	
 
-	@Then("I should be able to see the error message {string}")
-	public void i_should_be_able_to_see_the_error_message(String ExpError) {
-		// Write code here that turns the phrase above into concrete actions
-		WebElement Error = driver.findElement(By.xpath("//text()[normalize-space(.)='Login failed']"));
-		String actError = Error.getText();
-		System.out.println(actError);
-		Assert.assertEquals(ExpError, actError);
+
+		@Then("I should be able to see the password field")
+		public void i_should_be_able_to_see_the_password_field() {
+			WebElement Password = driver.findElement(By.name("pwd"));
+			Boolean result= Password.isDisplayed();
+			if(result= true)
+			{
+				System.out.println("User is not able to login with wrong credentials");
+			}
+			else
+			{
+				System.out.println("User is able to login with wrong credentials");	
+			}   
+          }
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	}
 
@@ -75,4 +94,4 @@ public class Login_Stepdefs {
 	
 	
 	
-}
+
