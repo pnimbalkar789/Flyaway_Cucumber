@@ -444,17 +444,15 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I should be able to see the error message \"Login failed\"",
+  "name": "I should be able to see the password field",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "Stepdefs.Login_Stepdefs.i_should_be_able_to_see_the_error_message(java.lang.String)"
+  "location": "Stepdefs.Login_Stepdefs.i_should_be_able_to_see_the_password_field()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.InvalidSelectorException: invalid selector: The result of the xpath expression \"//text()[normalize-space(.)\u003d\u0027Login failed\u0027]\" is: [object Text]. It should be an element.\n  (Session info: chrome\u003d139.0.7258.157)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception\nBuild info: version: \u00274.21.0\u0027, revision: \u002779ed462ef4\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.26\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [606155029c3d141164b180d5eef761ce, findElement {using\u003dxpath, value\u003d//text()[normalize-space(.)\u003d\u0027Login failed\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.157, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\\WINDOWS\\SystemTemp\\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64166}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64166/devtoo..., se:cdpVersion: 139.0.7258.157, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 606155029c3d141164b180d5eef761ce\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)\r\n\tat Stepdefs.Login_Stepdefs.i_should_be_able_to_see_the_error_message(Login_Stepdefs.java:65)\r\n\tat ✽.I should be able to see the error message \"Login failed\"(file:///C:/Users/pravin/eclipse-workspace/FlyAway_Cucumber/src/test/java/Features/Flyaway_Login.feature:22)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", "screenshot");
 formatter.after({
   "status": "passed"
 });
@@ -598,8 +596,7 @@ formatter.match({
   "location": "Stepdefs.Sign_Up_Stepdefs.i_click_on_the_login_to_continue_checking_flights_link()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(), \u0027Login to continue checking flights\u0027)]\"}\n  (Session info: chrome\u003d139.0.7258.157)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nBuild info: version: \u00274.21.0\u0027, revision: \u002779ed462ef4\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002711.0.26\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [e6170252cc47acf894783b14526ede71, findElement {using\u003dxpath, value\u003d//a[contains(text(), \u0027Login to continue checking flights\u0027)]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.157, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\\WINDOWS\\SystemTemp\\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64196}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64196/devtoo..., se:cdpVersion: 139.0.7258.157, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: e6170252cc47acf894783b14526ede71\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\r\n\tat org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)\r\n\tat Stepdefs.Sign_Up_Stepdefs.i_click_on_the_login_to_continue_checking_flights_link(Sign_Up_Stepdefs.java:74)\r\n\tat ✽.I click on the login to continue checking flights link(file:///C:/Users/pravin/eclipse-workspace/FlyAway_Cucumber/src/test/java/Features/Sign_Up.feature:21)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "I enter the Username \"alexp@gmail.com\"",
@@ -609,7 +606,7 @@ formatter.match({
   "location": "Stepdefs.Login_Stepdefs.i_enter_the_Username(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "I enter the Password \"alex@1234\"",
@@ -619,7 +616,7 @@ formatter.match({
   "location": "Stepdefs.Login_Stepdefs.i_enter_the_Password(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "I click on the Login Button",
@@ -629,7 +626,7 @@ formatter.match({
   "location": "Stepdefs.Login_Stepdefs.i_click_on_the_Login_Button()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "I should be able to see the home page \"FLYAWAY - DASHBOARD\"",
@@ -639,9 +636,8 @@ formatter.match({
   "location": "Stepdefs.Login_Stepdefs.i_should_be_able_to_see_the_home_page(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded1.png", "screenshot");
 formatter.after({
   "status": "passed"
 });

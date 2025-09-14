@@ -1,5 +1,7 @@
 package Stepdefs;
 
+import java.util.List;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -75,14 +77,36 @@ public class Login_Stepdefs {
 
 	
 	
+		@Then("I should be able to see the error message {string}")
+		public void i_should_be_able_to_see_the_error_message(String ExpError) {
+			// Write code here that turns the phrase above into concrete actions
+			
+			List<WebElement> Error = driver.findElements(By.xpath("//br[2]/following-sibling::text()[normalize-space()='Login failed']/parent::*"));
+			for( WebElement message: Error)
+			{
+				 if (message.getText().contains("Login failed")) 
+				 {
+				   
+				   System.out.println("Login failed message is displayed to the user with invalid credentials"); 
+				 }
+		       else 
+		         {
+					 System.out.println(message.getText());
+				  }
+			   }
+			}
 	
 	
 	
 	
 	
-	
-	
-	
+		
+		
+		
+		
+		
+		
+		
 	
 	
 	
