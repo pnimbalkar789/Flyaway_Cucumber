@@ -59,24 +59,6 @@ public class Login_Stepdefs {
 	}
 
 	
-
-
-		@Then("I should be able to see the password field")
-		public void i_should_be_able_to_see_the_password_field() {
-			WebElement Password = driver.findElement(By.name("pwd"));
-			Boolean result= Password.isDisplayed();
-			if(result= true)
-			{
-				System.out.println("User is not able to login with wrong credentials");
-			}
-			else
-			{
-				System.out.println("User is able to login with wrong credentials");	
-			}   
-          }
-
-	
-	
 		@Then("I should be able to see the error message {string}")
 		public void i_should_be_able_to_see_the_error_message(String ExpError) {
 			// Write code here that turns the phrase above into concrete actions
@@ -96,17 +78,6 @@ public class Login_Stepdefs {
 			   }
 			}
 	
-	
-	
-	
-	
-		
-		
-		
-		
-		
-		
-		
 	
 	
 	
